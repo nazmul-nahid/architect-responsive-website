@@ -138,6 +138,45 @@ main > section{
     max-width: 540px;
 
 }
+/* Love section related styles */
+.love{
+    gap: 140px;
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.love-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 30px 0 rgb(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+
+}
+
+.love-card .love-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+.love-architect img{
+    width: 100%;
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+/* Facts related styles */
 
 .facts-container{
     display: grid;
@@ -191,7 +230,8 @@ main > section{
 @media screen and (max-width:576px) {
     .navbar, 
     .nav-links,
-     .feature
+    .love,
+    .feature
      {
         flex-direction: column;
     }
@@ -199,6 +239,11 @@ main > section{
     .facts-container,
     .sponsor-companies{
         grid-template-columns: 1fr;
+    }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
     /* .our-feature{
         margin-left: 20px;
@@ -221,9 +266,14 @@ main > section{
 
 /* Medium Device responsive */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .feature{
+    .feature, .love{
     flex-direction: column;
     
+    }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
     .our-feature{
         margin: 50px auto;
